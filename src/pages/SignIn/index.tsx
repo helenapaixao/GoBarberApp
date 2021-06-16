@@ -2,7 +2,7 @@ import React from 'react';
 import {Container, Title, ForgotPassword, ForgotPasswordText,CreateAccountButton,CreateAccountButtontext} from './styles'
 import Icon from 'react-native-vector-icons/Feather'
 import logoImg from '../../assets/logo.png';
-import { Image, KeyboardAvoidingView, Platform,View,ScrollView} from 'react-native';
+import { Image, KeyboardAvoidingView, Platform,View,ScrollView, Keyboard} from 'react-native';
 
 import Input from '../../components/Input'
 import Button from '../../components/Button'

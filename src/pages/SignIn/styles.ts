@@ -1,4 +1,5 @@
 import { View,} from 'react-native';
+import {Platform} from 'react-native'
 import styled from 'styled-components/native';
 import {getBottomSpace} from 'react-native-iphone-x-helper'
 
@@ -7,10 +8,8 @@ import {getBottomSpace} from 'react-native-iphone-x-helper'
  flex:1;
  align-items: center;
  justify-content: center;
- padding: 0 30px;
+ padding: 0 30px ${Platform.OS === 'android' ? 150 : 40}px;
 
-
- 
  `;
 
 
