@@ -7,8 +7,12 @@ import { Image, KeyboardAvoidingView, Platform,View,ScrollView, Keyboard} from '
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 
+import { useNavigation} from '@react-navigation/native'
+
 
 export const SignUp: React.FC = () => {
+
+  const navigation = useNavigation();
   return (
     <>
     <KeyboardAvoidingView
@@ -36,7 +40,7 @@ export const SignUp: React.FC = () => {
       </ScrollView>
    
 
-    <BackToSignIn onPress={() => {}}>
+    <BackToSignIn onPress={() => navigation.goBack()}>
       <Icon name="arrow-left" size={20} color="#FFF">
       <BackToSignInText>Voltar para Logon</BackToSignInText>
       </Icon>
