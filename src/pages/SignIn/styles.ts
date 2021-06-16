@@ -7,6 +7,8 @@ import styled from 'styled-components/native';
  flex:1;
  align-items: center;
  justify-content: center;
+ padding: 0 30px;
+
  
  
  `;
